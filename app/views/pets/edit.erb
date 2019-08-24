@@ -13,17 +13,17 @@
     <p>Select an existing owner or create a new one below.</p>
 
 
-    <!-- <h3>Existing Owner</h3>
+    <h3>Existing Owner</h3>
     <% @owners.each do |owner| %>
       <input type="checkbox" name="owner[pet_ids][]" id="<%= pet.id %>" value="<%= pet.id %>" <%='checked' if @owner.pets.include?(pet) %>><%= pet.name %></input><br>
     <% end %>
     <br>
 
-    <h3>New Pet</h3>
-    <label>Pet Name: </label>
+    <h3>New Owner</h3>
+    <label>POwner Name: </label>
     <br>
-    <input type="text" name="pet[name]" id="pet_name"></input>
-    <br><br> -->
+    <input type="text" name="owner[name]" id="owner_name"></input>
+    <br><br>
 
     <input type="submit" value="Update Pets">
   </form>
