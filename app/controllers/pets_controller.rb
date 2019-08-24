@@ -37,7 +37,7 @@ class PetsController < ApplicationController
     end
     
     @pet.update(params[:pet])
-  
+
     redirect to "pets/#{@pet.id}"
   end
 end
