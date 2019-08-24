@@ -6,4 +6,9 @@
   <input type="text" name="pet_name">
 
   <br>
+
+  <h3>Existing Owners</h3>
+  <% @owners.each do |owner| %>
+    <input type="checkbox" name="owner,id" id="<%= pet.id %>" value="<%= owner.id %>"><%= owner.name %></input><br>
+  <% end %>
 </form>
